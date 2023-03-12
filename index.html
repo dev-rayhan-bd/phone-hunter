@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<header>
+    <div class="navbar bg-base-100  bg-red-50">
+        <div class="flex-1">
+          <h1 class=" text-xl"><span class="text-1xl font-semibold text-amber-600">Rayhan's</span>  Showroom</h1>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input id="input-field" type="text" placeholder="Search" class="input input-bordered" />
+          </div>
+          <div class="card-actions">
+            <!-- <button onclick="searchPhone()" class="btn btn-primary">Search</button> -->
+            <button id="btn-search" class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+</header>
+<main>
+
+
+  <!-- loader -->
+  <!-- <div id="loader" class="justify-center justify-items-center items-center hidden">
+    <button style="height: 400px;" class=" loading btn-info btn btn-outline"></button>
+  </div> -->
+  <div id="loader" class="flex items-center justify-center hidden" style="height: 400px;">
+    <div 
+      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      role="status">
+      <span 
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span>
+    </div>
+  </div>
+
+
+  <!-- warning msg -->
+  <div id="warning-msg" class="hidden">
+    <h1 class="text-warning">No phone Found.</h1>
+
+  </div>
+<!-- phone card -->
+<section id="phone-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 bg-red-50">
+
+</section>
+<!-- btn-show more -->
+<button id="btn-showmore" class="btn btn-wide hidden">Show More</button>
+
+<!-- modal -->
+<div id="modal-info">
+  <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+  <div id="modal" class="modal">
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+</main>
+<!-- link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+</body>
+</html>
